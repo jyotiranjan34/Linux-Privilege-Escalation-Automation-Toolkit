@@ -1,0 +1,1184 @@
+{
+  "system_info": {
+    "user": "root",
+    "hostname": "LAPTOP-B389URC8",
+    "kernel": "6.6.114.1-microsoft-standard-WSL2",
+    "os": "Ubuntu 26.04 LTS",
+    "groups": "uid=0(root) gid=0(root) groups=0(root)",
+    "arch": "x86_64",
+    "uptime": "up 23 minutes"
+  },
+  "suid_sgid": [],
+  "weak_permissions": [
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/ethertypes",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/vim/vimrc.tiny",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/vim/vimrc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/magic",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/profile.d/01-locale-fix.sh",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/profile.d/bash_completion.sh",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/profile.d/gawk.sh",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/profile.d/Z99-cloudinit-warnings.sh",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/profile.d/gawk.csh",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/profile.d/apps-bin-path.sh",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/profile.d/Z97-byobu.sh",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/profile.d/update-motd.sh",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/profile.d/Z99-cloud-locale-test.sh",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/crontab",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/subgid",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/protocols",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.ISO-8859-3.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.GEORGIAN-ACADEMY.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/cached_ISO-8859-1.acm.gz",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/remap.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.ISO-8859-16.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/vtrgb.vga",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.ISO-8859-5.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.ISO-8859-10.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.ISO-8859-8.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/cached_setup_terminal.sh",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.ISO-8859-2.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.ISO-8859-11.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.CP1251.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.ISIRI-3342.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.GEORGIAN-PS.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.ISO-8859-1.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.IBM1133.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.CP1256.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.ISO-8859-14.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/ISO-8859-1.acm",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/Uni2-Fixed16.psf.gz",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.ISO-8859-7.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.KOI8-R.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/cached_UTF-8_del.kmap.gz",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.CP1255.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/cached_Uni2-Fixed16.psf.gz",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.ISO-8859-6.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.KOI8-U.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/cached_ISO-8859-1_del.kmap.gz",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.VISCII.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.ARMSCII-8.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.ISO-8859-15.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.ISO-8859-9.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup/compose.TIS-620.inc",
+      "issue": "World-writable file"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/",
+      "issue": "World-writable directory"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc",
+      "issue": "World-writable directory"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/vim",
+      "issue": "World-writable directory"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/profile.d",
+      "issue": "World-writable directory"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/console-setup",
+      "issue": "World-writable directory"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/netplan",
+      "issue": "World-writable directory"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/rc6.d",
+      "issue": "World-writable directory"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/rc1.d",
+      "issue": "World-writable directory"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/dpkg",
+      "issue": "World-writable directory"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/dpkg/dpkg.cfg.d",
+      "issue": "World-writable directory"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/dpkg/origins",
+      "issue": "World-writable directory"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/ssh",
+      "issue": "World-writable directory"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/ssh/ssh_config.d",
+      "issue": "World-writable directory"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/networkd-dispatcher",
+      "issue": "World-writable directory"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/networkd-dispatcher/no-carrier.d",
+      "issue": "World-writable directory"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/networkd-dispatcher/dormant.d",
+      "issue": "World-writable directory"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/networkd-dispatcher/routable.d",
+      "issue": "World-writable directory"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/networkd-dispatcher/carrier.d",
+      "issue": "World-writable directory"
+    },
+    {
+      "severity": "MEDIUM",
+      "path": "/etc/networkd-dispatcher/off.d",
+      "issue": "World-writable directory"
+    }
+  ],
+  "services": [
+    {
+      "severity": "HIGH",
+      "service": "syslog.service",
+      "path": "/usr/sbin/rsyslogd",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "dbus-org.freedesktop.hostname1.service",
+      "path": "/usr/lib/systemd/systemd-hostnamed",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-suspend-then-hibernate.service",
+      "path": "/usr/lib/systemd/systemd-sleep",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pcrphase.service",
+      "path": "/usr/lib/systemd/systemd-pcrextend",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "e2scrub_all.service",
+      "path": "/sbin/e2scrub_all",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-localed.service",
+      "path": "/usr/lib/systemd/systemd-localed",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "dbus-org.freedesktop.locale1.service",
+      "path": "/usr/lib/systemd/systemd-localed",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-fsck@.service",
+      "path": "/usr/lib/systemd/systemd-fsck",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "setvtrgb.service",
+      "path": "/sbin/setvtrgb",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pcrlock-make-policy.service",
+      "path": "/usr/lib/systemd/systemd-pcrlock",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pcrfs-root.service",
+      "path": "/usr/lib/systemd/systemd-pcrextend",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "pam_namespace.service",
+      "path": "/usr/sbin/pam_namespace_helper",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-logind.service",
+      "path": "/usr/lib/systemd/systemd-logind",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "packagekit.service",
+      "path": "/usr/libexec/packagekitd",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-hostnamed.service",
+      "path": "/usr/lib/systemd/systemd-hostnamed",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "wsl-pro.service",
+      "path": "/usr/libexec/wsl-pro-service",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "apt-daily-upgrade.service",
+      "path": "/usr/lib/apt/apt.systemd.daily",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "apport.service",
+      "path": "/usr/share/apport/apport",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-tpm2-setup-early.service",
+      "path": "/usr/lib/systemd/systemd-tpm2-setup",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pcrlock-machine-id.service",
+      "path": "/usr/lib/systemd/systemd-pcrlock",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "snapd.apparmor.service",
+      "path": "/usr/lib/snapd/snapd-apparmor",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-backlight@.service",
+      "path": "/usr/lib/systemd/systemd-backlight",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-boot-check-no-failures.service",
+      "path": "/usr/lib/systemd/systemd-boot-check-no-failures",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "apt-news.service",
+      "path": "/usr/bin/python3",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-factory-reset-request.service",
+      "path": "/usr/lib/systemd/systemd-factory-reset",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "landscape-client.service",
+      "path": "/usr/bin/landscape-client",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-sysctl.service",
+      "path": "/usr/lib/systemd/systemd-sysctl",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "logrotate.service",
+      "path": "/usr/sbin/logrotate",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "packagekit-offline-update.service",
+      "path": "/usr/libexec/pk-offline-update",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pcrlock-file-system.service",
+      "path": "/usr/lib/systemd/systemd-pcrlock",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-networkd-wait-online@.service",
+      "path": "/usr/lib/systemd/systemd-networkd-wait-online",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "apport-autoreport.service",
+      "path": "/usr/share/apport/whoopsie-upload-all",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-quotacheck-root.service",
+      "path": "/usr/lib/systemd/systemd-quotacheck",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "rsync.service",
+      "path": "/usr/bin/rsync",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "snapd.system-shutdown.service",
+      "path": "/bin/mount",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "snapd.system-shutdown.service",
+      "path": "/bin/mkdir",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "snapd.system-shutdown.service",
+      "path": "/bin/cp",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pcrlock-secureboot-authority.service",
+      "path": "/usr/lib/systemd/systemd-pcrlock",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "cloud-init-main.service",
+      "path": "/usr/bin/cloud-init",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-fsck-root.service",
+      "path": "/usr/lib/systemd/systemd-fsck",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "e2scrub_reap.service",
+      "path": "/sbin/e2scrub_all",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "snapd.service",
+      "path": "/usr/lib/snapd/snapd",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "cloud-init-hotplugd.service",
+      "path": "/bin/bash",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pstore.service",
+      "path": "/usr/lib/systemd/systemd-pstore",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "dbus-org.freedesktop.login1.service",
+      "path": "/usr/lib/systemd/systemd-logind",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-quotacheck@.service",
+      "path": "/usr/lib/systemd/systemd-quotacheck",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "ubuntu-advantage.service",
+      "path": "/usr/bin/python3",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "networkd-dispatcher.service",
+      "path": "/usr/bin/networkd-dispatcher",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-storagetm.service",
+      "path": "/usr/lib/systemd/systemd-storagetm",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "rsyslog.service",
+      "path": "/usr/sbin/rsyslogd",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-hibernate-clear.service",
+      "path": "/usr/lib/systemd/systemd-hibernate-resume",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-tpm2-setup.service",
+      "path": "/usr/lib/systemd/systemd-tpm2-setup",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pcrmachine.service",
+      "path": "/usr/lib/systemd/systemd-pcrextend",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "motd-news.service",
+      "path": "/etc/update-motd.d/50-motd-news",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "snapd.autoimport.service",
+      "path": "/usr/bin/snap",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-random-seed.service",
+      "path": "/usr/lib/systemd/systemd-random-seed",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-modules-load.service",
+      "path": "/usr/lib/systemd/systemd-modules-load",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-networkd-wait-online.service",
+      "path": "/usr/lib/systemd/systemd-networkd-wait-online",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-growfs@.service",
+      "path": "/usr/lib/systemd/systemd-growfs",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-hibernate-resume.service",
+      "path": "/usr/lib/systemd/systemd-hibernate-resume",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "apport-coredump-hook@.service",
+      "path": "/usr/share/apport/apport",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "dmesg.service",
+      "path": "/bin/journalctl",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "snapd.snap-repair.service",
+      "path": "/usr/lib/snapd/snap-repair",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-suspend.service",
+      "path": "/usr/lib/systemd/systemd-sleep",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-rfkill.service",
+      "path": "/usr/lib/systemd/systemd-rfkill",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-bsod.service",
+      "path": "/usr/lib/systemd/systemd-bsod",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "e2scrub@.service",
+      "path": "/sbin/e2scrub",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-growfs-root.service",
+      "path": "/usr/lib/systemd/systemd-growfs",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "snapd.recovery-chooser-trigger.service",
+      "path": "/usr/lib/snapd/snap-bootstrap",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-tpm2-clear.service",
+      "path": "/usr/lib/systemd/systemd-tpm2-clear",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pcrphase-storage-target-mode.service",
+      "path": "/usr/lib/systemd/systemd-pcrextend",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "dbus-org.freedesktop.timedate1.service",
+      "path": "/usr/lib/systemd/systemd-timedated",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-hibernate.service",
+      "path": "/usr/lib/systemd/systemd-sleep",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pcrlock-firmware-config.service",
+      "path": "/usr/lib/systemd/systemd-pcrlock",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "ua-timer.service",
+      "path": "/usr/bin/python3",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "unattended-upgrades.service",
+      "path": "/usr/share/unattended-upgrades/unattended-upgrade-shutdown",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-journald.service",
+      "path": "/usr/lib/systemd/systemd-journald",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-udevd.service",
+      "path": "/usr/lib/systemd/systemd-udevd",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "keyboard-setup.service",
+      "path": "/lib/console-setup/keyboard-setup.sh",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "snapd.core-fixup.service",
+      "path": "/usr/lib/snapd/snapd.core-fixup.sh",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pcrfs@.service",
+      "path": "/usr/lib/systemd/systemd-pcrextend",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "snapd.seeded.service",
+      "path": "/usr/bin/snap",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pcrlock-secureboot-policy.service",
+      "path": "/usr/lib/systemd/systemd-pcrlock",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pcrlock@.service",
+      "path": "/usr/lib/systemd/systemd-pcrlock",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pcrnvdone.service",
+      "path": "/usr/lib/systemd/systemd-pcrextend",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-binfmt.service",
+      "path": "/usr/lib/systemd/systemd-binfmt",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "console-setup.service",
+      "path": "/lib/console-setup/console-setup.sh",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-battery-check.service",
+      "path": "/usr/lib/systemd/systemd-battery-check",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "kmod.service",
+      "path": "/usr/lib/systemd/systemd-modules-load",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "apport-forward@.service",
+      "path": "/usr/share/apport/apport",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-factory-reset-complete.service",
+      "path": "/usr/lib/systemd/systemd-factory-reset",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pcrphase-initrd.service",
+      "path": "/usr/lib/systemd/systemd-pcrextend",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "fstrim.service",
+      "path": "/sbin/fstrim",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "netplan-configure.service",
+      "path": "/usr/libexec/netplan/configure",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "user-runtime-dir@.service",
+      "path": "/usr/lib/systemd/systemd-user-runtime-dir",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-user-sessions.service",
+      "path": "/usr/lib/systemd/systemd-user-sessions",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "dpkg-db-backup.service",
+      "path": "/usr/libexec/dpkg/dpkg-db-backup",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-hybrid-sleep.service",
+      "path": "/usr/lib/systemd/systemd-sleep",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "kmod-static-nodes.service",
+      "path": "/usr/bin/kmod",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-network-generator.service",
+      "path": "/usr/lib/systemd/systemd-network-generator",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pcrphase-sysinit.service",
+      "path": "/usr/lib/systemd/systemd-pcrextend",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "chrony-dnssrv@.service",
+      "path": "/usr/libexec/chrony/chrony-helper",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "apparmor.service",
+      "path": "/lib/apparmor/apparmor.systemd",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "snapd.failure.service",
+      "path": "/usr/lib/snapd/snap-failure",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "ua-reboot-cmds.service",
+      "path": "/usr/bin/python3",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-validatefs@.service",
+      "path": "/usr/lib/systemd/systemd-validatefs",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-update-done.service",
+      "path": "/usr/lib/systemd/systemd-update-done",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "procps.service",
+      "path": "/usr/lib/systemd/systemd-sysctl",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "apt-daily.service",
+      "path": "/usr/lib/apt/apt.systemd.daily",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pcrphase-factory-reset.service",
+      "path": "/usr/lib/systemd/systemd-pcrextend",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "esm-cache.service",
+      "path": "/usr/bin/python3",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "initrd-parse-etc.service",
+      "path": "/usr/lib/systemd/systemd-sysroot-fstab-check",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-journald@.service",
+      "path": "/usr/lib/systemd/systemd-journald",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-remount-fs.service",
+      "path": "/usr/lib/systemd/systemd-remount-fs",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-timedated.service",
+      "path": "/usr/lib/systemd/systemd-timedated",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "polkit-agent-helper@.service",
+      "path": "/usr/lib/polkit-1/polkit-agent-helper-1",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pcrproduct.service",
+      "path": "/usr/lib/systemd/systemd-pcrextend",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-volatile-root.service",
+      "path": "/usr/lib/systemd/systemd-volatile-root",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "debug-shell.service",
+      "path": "/usr/bin/bash",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "systemd-pcrlock-firmware-code.service",
+      "path": "/usr/lib/systemd/systemd-pcrlock",
+      "note": "Writable ExecStart binary in root-level service"
+    },
+    {
+      "severity": "HIGH",
+      "service": "cron.service",
+      "path": "/usr/sbin/cron",
+      "note": "Writable ExecStart binary in root-level service"
+    }
+  ],
+  "cron_jobs": [
+    {
+      "severity": "HIGH",
+      "path": "/",
+      "schedule": "17 * * * *",
+      "source": "/etc/crontab",
+      "note": "Writable script executed by cron - replace for privilege escalation"
+    },
+    {
+      "severity": "HIGH",
+      "path": "/",
+      "schedule": "25 6 * * *",
+      "source": "/etc/crontab",
+      "note": "Writable script executed by cron - replace for privilege escalation"
+    },
+    {
+      "severity": "HIGH",
+      "path": "/",
+      "schedule": "47 6 * * 7",
+      "source": "/etc/crontab",
+      "note": "Writable script executed by cron - replace for privilege escalation"
+    },
+    {
+      "severity": "HIGH",
+      "path": "/",
+      "schedule": "52 6 1 * *",
+      "source": "/etc/crontab",
+      "note": "Writable script executed by cron - replace for privilege escalation"
+    },
+    {
+      "severity": "HIGH",
+      "path": "/run/systemd/system",
+      "schedule": "30 3 * * 0",
+      "source": "/etc/cron.d/e2scrub_all",
+      "note": "Writable script executed by cron - replace for privilege escalation"
+    },
+    {
+      "severity": "HIGH",
+      "path": "/run/systemd/system",
+      "schedule": "10 3 * * *",
+      "source": "/etc/cron.d/e2scrub_all",
+      "note": "Writable script executed by cron - replace for privilege escalation"
+    },
+    {
+      "severity": "HIGH",
+      "path": "/dev/null",
+      "schedule": "RANDOM=$(( $(dd if=/dev/urandom bs=2 count=1",
+      "source": "/etc/cron.daily/apt-compat",
+      "note": "Writable script executed by cron - replace for privilege escalation"
+    },
+    {
+      "severity": "HIGH",
+      "path": "/proc/self/status",
+      "schedule": "if ! grep -Eq '(envID|VxID):.*[1-9]'",
+      "source": "/etc/cron.daily/man-db",
+      "note": "Writable script executed by cron - replace for privilege escalation"
+    },
+    {
+      "severity": "HIGH",
+      "path": "/var/cache/man",
+      "schedule": "install -d -o man -g",
+      "source": "/etc/cron.daily/man-db",
+      "note": "Writable script executed by cron - replace for privilege escalation"
+    },
+    {
+      "severity": "HIGH",
+      "path": "/bin/sh",
+      "schedule": "start-stop-daemon --start --pidfile /dev/null --startas",
+      "source": "/etc/cron.daily/man-db",
+      "note": "Writable script executed by cron - replace for privilege escalation"
+    },
+    {
+      "severity": "HIGH",
+      "path": "/proc/self/status",
+      "schedule": "if ! grep -Eq '(envID|VxID):.*[1-9]'",
+      "source": "/etc/cron.weekly/man-db",
+      "note": "Writable script executed by cron - replace for privilege escalation"
+    },
+    {
+      "severity": "HIGH",
+      "path": "/var/cache/man",
+      "schedule": "install -d -o man -g",
+      "source": "/etc/cron.weekly/man-db",
+      "note": "Writable script executed by cron - replace for privilege escalation"
+    }
+  ],
+  "kernel": {
+    "version": "6.6.114.1-microsoft-standard-WSL2"
+  },
+  "sudo_rules": [
+    {
+      "severity": "MEDIUM",
+      "rule": "(ALL : ALL) ALL",
+      "note": "Broad privilege rule"
+    }
+  ],
+  "capabilities": []
+}

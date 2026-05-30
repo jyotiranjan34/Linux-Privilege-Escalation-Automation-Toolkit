@@ -1,0 +1,14 @@
+Scan Date: Sat May 30 11:41:26 UTC 2026
+======================================================
+
+=== System Information ===
+    User       : satya
+    Hostname   : LAPTOP-B389URC8
+    Kernel     : 6.6.114.1-microsoft-standard-WSL2
+    OS         : Ubuntu 26.04 LTS
+    ID         : uid=1000(satya) gid=1000(satya) groups=1000(satya),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users)
+    Home       : /home/satya
+    Shell      : /bin/bash
+
+=== SUID Binaries ===
+  Scanning...

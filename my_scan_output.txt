@@ -1,0 +1,717 @@
+
+[1m[96m
+╔══════════════════════════════════════════════════════════════╗
+║      Linux Privilege Escalation Automation Toolkit          ║
+║      Mode: DETECTION ONLY  |  No Exploitation Performed     ║
+╚══════════════════════════════════════════════════════════════╝
+[0m
+  Scan started at: 2026-05-30 11:23:23
+  [93mWARNING: This tool performs READ-ONLY detection. No exploitation occurs.[0m
+
+
+[1m[93m════════════════════════════════════════════════════════════[0m
+[1m[96m  [*] STEP 1: System Information Collection[0m
+[1m[93m════════════════════════════════════════════════════════════[0m
+  User      : [1mroot[0m
+  Hostname  : LAPTOP-B389URC8
+  OS        : Ubuntu 26.04 LTS
+  Kernel    : 6.6.114.1-microsoft-standard-WSL2
+  Arch      : x86_64
+  ID / Groups: uid=0(root) gid=0(root) groups=0(root)
+
+  [92m[+] Already running as root![0m
+
+[1m[93m════════════════════════════════════════════════════════════[0m
+[1m[96m  [*] STEP 2A: SUID/SGID Binary Discovery[0m
+[1m[93m════════════════════════════════════════════════════════════[0m
+  Scanning filesystem for SUID/SGID binaries (this may take a moment)...
+
+  Found 0 SUID binaries, 0 SGID binaries
+  [92m[+] No GTFOBins-matched SUID/SGID binaries found.[0m
+
+[1m[93m════════════════════════════════════════════════════════════[0m
+[1m[96m  [*] STEP 2B: Weak File & Directory Permissions[0m
+[1m[93m════════════════════════════════════════════════════════════[0m
+  Scanning for world-writable files...
+  [93m[MED][0m World-writable file: /etc/ethertypes
+  [93m[MED][0m World-writable file: /etc/vim/vimrc.tiny
+  [93m[MED][0m World-writable file: /etc/vim/vimrc
+  [93m[MED][0m World-writable file: /etc/magic
+  [93m[MED][0m World-writable file: /etc/profile.d/01-locale-fix.sh
+  [93m[MED][0m World-writable file: /etc/profile.d/bash_completion.sh
+  [93m[MED][0m World-writable file: /etc/profile.d/gawk.sh
+  [93m[MED][0m World-writable file: /etc/profile.d/Z99-cloudinit-warnings.sh
+  [93m[MED][0m World-writable file: /etc/profile.d/gawk.csh
+  [93m[MED][0m World-writable file: /etc/profile.d/apps-bin-path.sh
+  [93m[MED][0m World-writable file: /etc/profile.d/Z97-byobu.sh
+  [93m[MED][0m World-writable file: /etc/profile.d/update-motd.sh
+  [93m[MED][0m World-writable file: /etc/profile.d/Z99-cloud-locale-test.sh
+  [93m[MED][0m World-writable file: /etc/crontab
+  [93m[MED][0m World-writable file: /etc/subgid
+  [93m[MED][0m World-writable file: /etc/protocols
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.ISO-8859-3.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.GEORGIAN-ACADEMY.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/cached_ISO-8859-1.acm.gz
+  [93m[MED][0m World-writable file: /etc/console-setup/remap.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.ISO-8859-16.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/vtrgb.vga
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.ISO-8859-5.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.ISO-8859-10.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.ISO-8859-8.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/cached_setup_terminal.sh
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.ISO-8859-2.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.ISO-8859-11.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.CP1251.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.ISIRI-3342.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.GEORGIAN-PS.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.ISO-8859-1.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.IBM1133.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.CP1256.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.ISO-8859-14.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/ISO-8859-1.acm
+  [93m[MED][0m World-writable file: /etc/console-setup/Uni2-Fixed16.psf.gz
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.ISO-8859-7.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.KOI8-R.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/cached_UTF-8_del.kmap.gz
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.CP1255.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/cached_Uni2-Fixed16.psf.gz
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.ISO-8859-6.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.KOI8-U.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/cached_ISO-8859-1_del.kmap.gz
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.VISCII.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.ARMSCII-8.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.ISO-8859-15.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.ISO-8859-9.inc
+  [93m[MED][0m World-writable file: /etc/console-setup/compose.TIS-620.inc
+
+  Checking critical file permissions...
+  [92m[LOW][0m /etc/passwd permissions OK (mode: 644)
+  [92m[LOW][0m /etc/shadow permissions OK (mode: 640)
+  [92m[LOW][0m /etc/sudoers permissions OK (mode: 440)
+  [92m[LOW][0m /etc/crontab permissions OK (mode: 644)
+  [92m[LOW][0m /etc/hosts permissions OK (mode: 644)
+
+  Scanning for world-writable directories...
+  [93m[MED][0m World-writable directory: /
+  [93m[MED][0m World-writable directory: /etc
+  [93m[MED][0m World-writable directory: /etc/vim
+  [93m[MED][0m World-writable directory: /etc/profile.d
+  [93m[MED][0m World-writable directory: /etc/console-setup
+  [93m[MED][0m World-writable directory: /etc/netplan
+  [93m[MED][0m World-writable directory: /etc/rc6.d
+  [93m[MED][0m World-writable directory: /etc/rc1.d
+  [93m[MED][0m World-writable directory: /etc/dpkg
+  [93m[MED][0m World-writable directory: /etc/dpkg/dpkg.cfg.d
+  [93m[MED][0m World-writable directory: /etc/dpkg/origins
+  [93m[MED][0m World-writable directory: /etc/ssh
+  [93m[MED][0m World-writable directory: /etc/ssh/ssh_config.d
+  [93m[MED][0m World-writable directory: /etc/networkd-dispatcher
+  [93m[MED][0m World-writable directory: /etc/networkd-dispatcher/no-carrier.d
+  [93m[MED][0m World-writable directory: /etc/networkd-dispatcher/dormant.d
+  [93m[MED][0m World-writable directory: /etc/networkd-dispatcher/routable.d
+  [93m[MED][0m World-writable directory: /etc/networkd-dispatcher/carrier.d
+  [93m[MED][0m World-writable directory: /etc/networkd-dispatcher/off.d
+
+[1m[93m════════════════════════════════════════════════════════════[0m
+[1m[96m  [*] STEP 2C: Misconfigured Systemd Services[0m
+[1m[93m════════════════════════════════════════════════════════════[0m
+  Checking sudo privileges...
+  [93m[MED][0m Broad sudo rule: (ALL : ALL) ALL
+
+  Scanning systemd service files...
+  [91m[HIGH][0m Service syslog.service: ExecStart=/usr/sbin/rsyslogd is writable!
+  [91m[HIGH][0m Service dbus-org.freedesktop.hostname1.service: ExecStart=/usr/lib/systemd/systemd-hostnamed is writable!
+  [91m[HIGH][0m Service systemd-suspend-then-hibernate.service: ExecStart=/usr/lib/systemd/systemd-sleep is writable!
+  [91m[HIGH][0m Service systemd-pcrphase.service: ExecStart=/usr/lib/systemd/systemd-pcrextend is writable!
+  [91m[HIGH][0m Service e2scrub_all.service: ExecStart=/sbin/e2scrub_all is writable!
+  [91m[HIGH][0m Service systemd-localed.service: ExecStart=/usr/lib/systemd/systemd-localed is writable!
+  [91m[HIGH][0m Service dbus-org.freedesktop.locale1.service: ExecStart=/usr/lib/systemd/systemd-localed is writable!
+  [91m[HIGH][0m Service systemd-fsck@.service: ExecStart=/usr/lib/systemd/systemd-fsck is writable!
+  [91m[HIGH][0m Service setvtrgb.service: ExecStart=/sbin/setvtrgb is writable!
+  [91m[HIGH][0m Service systemd-pcrlock-make-policy.service: ExecStart=/usr/lib/systemd/systemd-pcrlock is writable!
+  [91m[HIGH][0m Service systemd-pcrfs-root.service: ExecStart=/usr/lib/systemd/systemd-pcrextend is writable!
+  [91m[HIGH][0m Service pam_namespace.service: ExecStart=/usr/sbin/pam_namespace_helper is writable!
+  [91m[HIGH][0m Service systemd-logind.service: ExecStart=/usr/lib/systemd/systemd-logind is writable!
+  [91m[HIGH][0m Service packagekit.service: ExecStart=/usr/libexec/packagekitd is writable!
+  [91m[HIGH][0m Service systemd-hostnamed.service: ExecStart=/usr/lib/systemd/systemd-hostnamed is writable!
+  [91m[HIGH][0m Service wsl-pro.service: ExecStart=/usr/libexec/wsl-pro-service is writable!
+  [91m[HIGH][0m Service apt-daily-upgrade.service: ExecStart=/usr/lib/apt/apt.systemd.daily is writable!
+  [91m[HIGH][0m Service apport.service: ExecStart=/usr/share/apport/apport is writable!
+  [91m[HIGH][0m Service systemd-tpm2-setup-early.service: ExecStart=/usr/lib/systemd/systemd-tpm2-setup is writable!
+  [91m[HIGH][0m Service systemd-pcrlock-machine-id.service: ExecStart=/usr/lib/systemd/systemd-pcrlock is writable!
+  [91m[HIGH][0m Service snapd.apparmor.service: ExecStart=/usr/lib/snapd/snapd-apparmor is writable!
+  [91m[HIGH][0m Service systemd-backlight@.service: ExecStart=/usr/lib/systemd/systemd-backlight is writable!
+  [91m[HIGH][0m Service systemd-boot-check-no-failures.service: ExecStart=/usr/lib/systemd/systemd-boot-check-no-failures is writable!
+  [91m[HIGH][0m Service apt-news.service: ExecStart=/usr/bin/python3 is writable!
+  [91m[HIGH][0m Service systemd-factory-reset-request.service: ExecStart=/usr/lib/systemd/systemd-factory-reset is writable!
+  [91m[HIGH][0m Service landscape-client.service: ExecStart=/usr/bin/landscape-client is writable!
+  [91m[HIGH][0m Service systemd-sysctl.service: ExecStart=/usr/lib/systemd/systemd-sysctl is writable!
+  [91m[HIGH][0m Service logrotate.service: ExecStart=/usr/sbin/logrotate is writable!
+  [91m[HIGH][0m Service packagekit-offline-update.service: ExecStart=/usr/libexec/pk-offline-update is writable!
+  [91m[HIGH][0m Service systemd-pcrlock-file-system.service: ExecStart=/usr/lib/systemd/systemd-pcrlock is writable!
+  [91m[HIGH][0m Service systemd-networkd-wait-online@.service: ExecStart=/usr/lib/systemd/systemd-networkd-wait-online is writable!
+  [91m[HIGH][0m Service apport-autoreport.service: ExecStart=/usr/share/apport/whoopsie-upload-all is writable!
+  [91m[HIGH][0m Service systemd-quotacheck-root.service: ExecStart=/usr/lib/systemd/systemd-quotacheck is writable!
+  [91m[HIGH][0m Service rsync.service: ExecStart=/usr/bin/rsync is writable!
+  [91m[HIGH][0m Service snapd.system-shutdown.service: ExecStart=/bin/mount is writable!
+  [91m[HIGH][0m Service snapd.system-shutdown.service: ExecStart=/bin/mkdir is writable!
+  [91m[HIGH][0m Service snapd.system-shutdown.service: ExecStart=/bin/cp is writable!
+  [91m[HIGH][0m Service systemd-pcrlock-secureboot-authority.service: ExecStart=/usr/lib/systemd/systemd-pcrlock is writable!
+  [91m[HIGH][0m Service cloud-init-main.service: ExecStart=/usr/bin/cloud-init is writable!
+  [91m[HIGH][0m Service systemd-fsck-root.service: ExecStart=/usr/lib/systemd/systemd-fsck is writable!
+  [91m[HIGH][0m Service e2scrub_reap.service: ExecStart=/sbin/e2scrub_all is writable!
+  [91m[HIGH][0m Service snapd.service: ExecStart=/usr/lib/snapd/snapd is writable!
+  [91m[HIGH][0m Service cloud-init-hotplugd.service: ExecStart=/bin/bash is writable!
+  [91m[HIGH][0m Service systemd-pstore.service: ExecStart=/usr/lib/systemd/systemd-pstore is writable!
+  [91m[HIGH][0m Service dbus-org.freedesktop.login1.service: ExecStart=/usr/lib/systemd/systemd-logind is writable!
+  [91m[HIGH][0m Service systemd-quotacheck@.service: ExecStart=/usr/lib/systemd/systemd-quotacheck is writable!
+  [91m[HIGH][0m Service ubuntu-advantage.service: ExecStart=/usr/bin/python3 is writable!
+  [91m[HIGH][0m Service networkd-dispatcher.service: ExecStart=/usr/bin/networkd-dispatcher is writable!
+  [91m[HIGH][0m Service systemd-storagetm.service: ExecStart=/usr/lib/systemd/systemd-storagetm is writable!
+  [91m[HIGH][0m Service rsyslog.service: ExecStart=/usr/sbin/rsyslogd is writable!
+  [91m[HIGH][0m Service systemd-hibernate-clear.service: ExecStart=/usr/lib/systemd/systemd-hibernate-resume is writable!
+  [91m[HIGH][0m Service systemd-tpm2-setup.service: ExecStart=/usr/lib/systemd/systemd-tpm2-setup is writable!
+  [91m[HIGH][0m Service systemd-pcrmachine.service: ExecStart=/usr/lib/systemd/systemd-pcrextend is writable!
+  [91m[HIGH][0m Service motd-news.service: ExecStart=/etc/update-motd.d/50-motd-news is writable!
+  [91m[HIGH][0m Service snapd.autoimport.service: ExecStart=/usr/bin/snap is writable!
+  [91m[HIGH][0m Service systemd-random-seed.service: ExecStart=/usr/lib/systemd/systemd-random-seed is writable!
+  [91m[HIGH][0m Service systemd-modules-load.service: ExecStart=/usr/lib/systemd/systemd-modules-load is writable!
+  [91m[HIGH][0m Service systemd-networkd-wait-online.service: ExecStart=/usr/lib/systemd/systemd-networkd-wait-online is writable!
+  [91m[HIGH][0m Service systemd-growfs@.service: ExecStart=/usr/lib/systemd/systemd-growfs is writable!
+  [91m[HIGH][0m Service systemd-hibernate-resume.service: ExecStart=/usr/lib/systemd/systemd-hibernate-resume is writable!
+  [91m[HIGH][0m Service apport-coredump-hook@.service: ExecStart=/usr/share/apport/apport is writable!
+  [91m[HIGH][0m Service dmesg.service: ExecStart=/bin/journalctl is writable!
+  [91m[HIGH][0m Service snapd.snap-repair.service: ExecStart=/usr/lib/snapd/snap-repair is writable!
+  [91m[HIGH][0m Service systemd-suspend.service: ExecStart=/usr/lib/systemd/systemd-sleep is writable!
+  [91m[HIGH][0m Service systemd-rfkill.service: ExecStart=/usr/lib/systemd/systemd-rfkill is writable!
+  [91m[HIGH][0m Service systemd-bsod.service: ExecStart=/usr/lib/systemd/systemd-bsod is writable!
+  [91m[HIGH][0m Service e2scrub@.service: ExecStart=/sbin/e2scrub is writable!
+  [91m[HIGH][0m Service systemd-growfs-root.service: ExecStart=/usr/lib/systemd/systemd-growfs is writable!
+  [91m[HIGH][0m Service snapd.recovery-chooser-trigger.service: ExecStart=/usr/lib/snapd/snap-bootstrap is writable!
+  [91m[HIGH][0m Service systemd-tpm2-clear.service: ExecStart=/usr/lib/systemd/systemd-tpm2-clear is writable!
+  [91m[HIGH][0m Service systemd-pcrphase-storage-target-mode.service: ExecStart=/usr/lib/systemd/systemd-pcrextend is writable!
+  [91m[HIGH][0m Service dbus-org.freedesktop.timedate1.service: ExecStart=/usr/lib/systemd/systemd-timedated is writable!
+  [91m[HIGH][0m Service systemd-hibernate.service: ExecStart=/usr/lib/systemd/systemd-sleep is writable!
+  [91m[HIGH][0m Service systemd-pcrlock-firmware-config.service: ExecStart=/usr/lib/systemd/systemd-pcrlock is writable!
+  [91m[HIGH][0m Service ua-timer.service: ExecStart=/usr/bin/python3 is writable!
+  [91m[HIGH][0m Service unattended-upgrades.service: ExecStart=/usr/share/unattended-upgrades/unattended-upgrade-shutdown is writable!
+  [91m[HIGH][0m Service systemd-journald.service: ExecStart=/usr/lib/systemd/systemd-journald is writable!
+  [91m[HIGH][0m Service systemd-udevd.service: ExecStart=/usr/lib/systemd/systemd-udevd is writable!
+  [91m[HIGH][0m Service keyboard-setup.service: ExecStart=/lib/console-setup/keyboard-setup.sh is writable!
+  [91m[HIGH][0m Service snapd.core-fixup.service: ExecStart=/usr/lib/snapd/snapd.core-fixup.sh is writable!
+  [91m[HIGH][0m Service systemd-pcrfs@.service: ExecStart=/usr/lib/systemd/systemd-pcrextend is writable!
+  [91m[HIGH][0m Service snapd.seeded.service: ExecStart=/usr/bin/snap is writable!
+  [91m[HIGH][0m Service systemd-pcrlock-secureboot-policy.service: ExecStart=/usr/lib/systemd/systemd-pcrlock is writable!
+  [91m[HIGH][0m Service systemd-pcrlock@.service: ExecStart=/usr/lib/systemd/systemd-pcrlock is writable!
+  [91m[HIGH][0m Service systemd-pcrnvdone.service: ExecStart=/usr/lib/systemd/systemd-pcrextend is writable!
+  [91m[HIGH][0m Service systemd-binfmt.service: ExecStart=/usr/lib/systemd/systemd-binfmt is writable!
+  [91m[HIGH][0m Service console-setup.service: ExecStart=/lib/console-setup/console-setup.sh is writable!
+  [91m[HIGH][0m Service systemd-battery-check.service: ExecStart=/usr/lib/systemd/systemd-battery-check is writable!
+  [91m[HIGH][0m Service kmod.service: ExecStart=/usr/lib/systemd/systemd-modules-load is writable!
+  [91m[HIGH][0m Service apport-forward@.service: ExecStart=/usr/share/apport/apport is writable!
+  [91m[HIGH][0m Service systemd-factory-reset-complete.service: ExecStart=/usr/lib/systemd/systemd-factory-reset is writable!
+  [91m[HIGH][0m Service systemd-pcrphase-initrd.service: ExecStart=/usr/lib/systemd/systemd-pcrextend is writable!
+  [91m[HIGH][0m Service fstrim.service: ExecStart=/sbin/fstrim is writable!
+  [91m[HIGH][0m Service netplan-configure.service: ExecStart=/usr/libexec/netplan/configure is writable!
+  [91m[HIGH][0m Service user-runtime-dir@.service: ExecStart=/usr/lib/systemd/systemd-user-runtime-dir is writable!
+  [91m[HIGH][0m Service systemd-user-sessions.service: ExecStart=/usr/lib/systemd/systemd-user-sessions is writable!
+  [91m[HIGH][0m Service dpkg-db-backup.service: ExecStart=/usr/libexec/dpkg/dpkg-db-backup is writable!
+  [91m[HIGH][0m Service systemd-hybrid-sleep.service: ExecStart=/usr/lib/systemd/systemd-sleep is writable!
+  [91m[HIGH][0m Service kmod-static-nodes.service: ExecStart=/usr/bin/kmod is writable!
+  [91m[HIGH][0m Service systemd-network-generator.service: ExecStart=/usr/lib/systemd/systemd-network-generator is writable!
+  [91m[HIGH][0m Service systemd-pcrphase-sysinit.service: ExecStart=/usr/lib/systemd/systemd-pcrextend is writable!
+  [91m[HIGH][0m Service chrony-dnssrv@.service: ExecStart=/usr/libexec/chrony/chrony-helper is writable!
+  [91m[HIGH][0m Service apparmor.service: ExecStart=/lib/apparmor/apparmor.systemd is writable!
+  [91m[HIGH][0m Service snapd.failure.service: ExecStart=/usr/lib/snapd/snap-failure is writable!
+  [91m[HIGH][0m Service ua-reboot-cmds.service: ExecStart=/usr/bin/python3 is writable!
+  [91m[HIGH][0m Service systemd-validatefs@.service: ExecStart=/usr/lib/systemd/systemd-validatefs is writable!
+  [91m[HIGH][0m Service systemd-update-done.service: ExecStart=/usr/lib/systemd/systemd-update-done is writable!
+  [91m[HIGH][0m Service procps.service: ExecStart=/usr/lib/systemd/systemd-sysctl is writable!
+  [91m[HIGH][0m Service apt-daily.service: ExecStart=/usr/lib/apt/apt.systemd.daily is writable!
+  [91m[HIGH][0m Service systemd-pcrphase-factory-reset.service: ExecStart=/usr/lib/systemd/systemd-pcrextend is writable!
+  [91m[HIGH][0m Service esm-cache.service: ExecStart=/usr/bin/python3 is writable!
+  [91m[HIGH][0m Service initrd-parse-etc.service: ExecStart=/usr/lib/systemd/systemd-sysroot-fstab-check is writable!
+  [91m[HIGH][0m Service systemd-journald@.service: ExecStart=/usr/lib/systemd/systemd-journald is writable!
+  [91m[HIGH][0m Service systemd-remount-fs.service: ExecStart=/usr/lib/systemd/systemd-remount-fs is writable!
+  [91m[HIGH][0m Service systemd-timedated.service: ExecStart=/usr/lib/systemd/systemd-timedated is writable!
+  [91m[HIGH][0m Service polkit-agent-helper@.service: ExecStart=/usr/lib/polkit-1/polkit-agent-helper-1 is writable!
+  [91m[HIGH][0m Service systemd-pcrproduct.service: ExecStart=/usr/lib/systemd/systemd-pcrextend is writable!
+  [91m[HIGH][0m Service systemd-volatile-root.service: ExecStart=/usr/lib/systemd/systemd-volatile-root is writable!
+  [91m[HIGH][0m Service debug-shell.service: ExecStart=/usr/bin/bash is writable!
+  [91m[HIGH][0m Service systemd-pcrlock-firmware-code.service: ExecStart=/usr/lib/systemd/systemd-pcrlock is writable!
+  [91m[HIGH][0m Service cron.service: ExecStart=/usr/sbin/cron is writable!
+
+  Scanning for elevated Linux capabilities...
+  [92m[+] No special capabilities found.[0m
+
+[1m[93m════════════════════════════════════════════════════════════[0m
+[1m[96m  [*] STEP 2D: Cron Job Vulnerabilities[0m
+[1m[93m════════════════════════════════════════════════════════════[0m
+  [91m[HIGH][0m Writable cron script: /  (from /etc/crontab)
+  [91m[HIGH][0m Writable cron script: /  (from /etc/crontab)
+  [91m[HIGH][0m Writable cron script: /  (from /etc/crontab)
+  [91m[HIGH][0m Writable cron script: /  (from /etc/crontab)
+  [91m[HIGH][0m Writable cron script: /run/systemd/system  (from /etc/cron.d/e2scrub_all)
+  [91m[HIGH][0m Writable cron script: /run/systemd/system  (from /etc/cron.d/e2scrub_all)
+  [91m[HIGH][0m Writable cron script: /dev/null  (from /etc/cron.daily/apt-compat)
+  [91m[HIGH][0m Writable cron script: /proc/self/status  (from /etc/cron.daily/man-db)
+  [91m[HIGH][0m Writable cron script: /var/cache/man  (from /etc/cron.daily/man-db)
+  [91m[HIGH][0m Writable cron script: /bin/sh  (from /etc/cron.daily/man-db)
+  [91m[HIGH][0m Writable cron script: /proc/self/status  (from /etc/cron.weekly/man-db)
+  [91m[HIGH][0m Writable cron script: /var/cache/man  (from /etc/cron.weekly/man-db)
+
+[1m[93m════════════════════════════════════════════════════════════[0m
+[1m[96m  [*] STEP 2E: Kernel Exploit Detection[0m
+[1m[93m════════════════════════════════════════════════════════════[0m
+  Kernel version: [1m6.6.114.1-microsoft-standard-WSL2[0m
+  [92m[+] Kernel version appears relatively modern.[0m
+
+[1m[93m════════════════════════════════════════════════════════════[0m
+[1m[96m  [*] STEP 4: Final Security Report[0m
+[1m[93m════════════════════════════════════════════════════════════[0m
+======================================================================
+  LINUX PRIVILEGE ESCALATION AUDIT REPORT
+  Generated : 2026-05-30 11:24:08
+  Host      : LAPTOP-B389URC8
+  User      : root
+  OS        : Ubuntu 26.04 LTS
+  Kernel    : 6.6.114.1-microsoft-standard-WSL2
+======================================================================
+
+  SUMMARY: 133 HIGH | 70 MEDIUM | 0 LOW findings
+
+
+────────────────────────────────────────────────────────────
+  [WEAK PERMISSIONS]
+────────────────────────────────────────────────────────────
+  [MEDIUM] /etc/ethertypes
+           
+  [MEDIUM] /etc/vim/vimrc.tiny
+           
+  [MEDIUM] /etc/vim/vimrc
+           
+  [MEDIUM] /etc/magic
+           
+  [MEDIUM] /etc/profile.d/01-locale-fix.sh
+           
+  [MEDIUM] /etc/profile.d/bash_completion.sh
+           
+  [MEDIUM] /etc/profile.d/gawk.sh
+           
+  [MEDIUM] /etc/profile.d/Z99-cloudinit-warnings.sh
+           
+  [MEDIUM] /etc/profile.d/gawk.csh
+           
+  [MEDIUM] /etc/profile.d/apps-bin-path.sh
+           
+  [MEDIUM] /etc/profile.d/Z97-byobu.sh
+           
+  [MEDIUM] /etc/profile.d/update-motd.sh
+           
+  [MEDIUM] /etc/profile.d/Z99-cloud-locale-test.sh
+           
+  [MEDIUM] /etc/crontab
+           
+  [MEDIUM] /etc/subgid
+           
+  [MEDIUM] /etc/protocols
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-3.inc
+           
+  [MEDIUM] /etc/console-setup/compose.GEORGIAN-ACADEMY.inc
+           
+  [MEDIUM] /etc/console-setup/cached_ISO-8859-1.acm.gz
+           
+  [MEDIUM] /etc/console-setup/remap.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-16.inc
+           
+  [MEDIUM] /etc/console-setup/vtrgb.vga
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-5.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-10.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-8.inc
+           
+  [MEDIUM] /etc/console-setup/cached_setup_terminal.sh
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-2.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-11.inc
+           
+  [MEDIUM] /etc/console-setup/compose.CP1251.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ISIRI-3342.inc
+           
+  [MEDIUM] /etc/console-setup/compose.GEORGIAN-PS.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-1.inc
+           
+  [MEDIUM] /etc/console-setup/compose.IBM1133.inc
+           
+  [MEDIUM] /etc/console-setup/compose.CP1256.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-14.inc
+           
+  [MEDIUM] /etc/console-setup/ISO-8859-1.acm
+           
+  [MEDIUM] /etc/console-setup/Uni2-Fixed16.psf.gz
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-7.inc
+           
+  [MEDIUM] /etc/console-setup/compose.KOI8-R.inc
+           
+  [MEDIUM] /etc/console-setup/cached_UTF-8_del.kmap.gz
+           
+  [MEDIUM] /etc/console-setup/compose.CP1255.inc
+           
+  [MEDIUM] /etc/console-setup/cached_Uni2-Fixed16.psf.gz
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-6.inc
+           
+  [MEDIUM] /etc/console-setup/compose.KOI8-U.inc
+           
+  [MEDIUM] /etc/console-setup/cached_ISO-8859-1_del.kmap.gz
+           
+  [MEDIUM] /etc/console-setup/compose.VISCII.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ARMSCII-8.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-15.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-9.inc
+           
+  [MEDIUM] /etc/console-setup/compose.TIS-620.inc
+           
+  [MEDIUM] /
+           
+  [MEDIUM] /etc
+           
+  [MEDIUM] /etc/vim
+           
+  [MEDIUM] /etc/profile.d
+           
+  [MEDIUM] /etc/console-setup
+           
+  [MEDIUM] /etc/netplan
+           
+  [MEDIUM] /etc/rc6.d
+           
+  [MEDIUM] /etc/rc1.d
+           
+  [MEDIUM] /etc/dpkg
+           
+  [MEDIUM] /etc/dpkg/dpkg.cfg.d
+           
+  [MEDIUM] /etc/dpkg/origins
+           
+  [MEDIUM] /etc/ssh
+           
+  [MEDIUM] /etc/ssh/ssh_config.d
+           
+  [MEDIUM] /etc/networkd-dispatcher
+           
+  [MEDIUM] /etc/networkd-dispatcher/no-carrier.d
+           
+  [MEDIUM] /etc/networkd-dispatcher/dormant.d
+           
+  [MEDIUM] /etc/networkd-dispatcher/routable.d
+           
+  [MEDIUM] /etc/networkd-dispatcher/carrier.d
+           
+  [MEDIUM] /etc/networkd-dispatcher/off.d
+           
+
+  Mitigation: Fix with chmod. /etc/shadow should be 640, /etc/passwd 644.
+
+────────────────────────────────────────────────────────────
+  [MISCONFIGURED SERVICES]
+────────────────────────────────────────────────────────────
+  [HIGH  ] /usr/sbin/rsyslogd
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-hostnamed
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-sleep
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /sbin/e2scrub_all
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-localed
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-localed
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-fsck
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /sbin/setvtrgb
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrlock
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/sbin/pam_namespace_helper
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-logind
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/libexec/packagekitd
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-hostnamed
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/libexec/wsl-pro-service
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/apt/apt.systemd.daily
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/share/apport/apport
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-tpm2-setup
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrlock
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/snapd/snapd-apparmor
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-backlight
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-boot-check-no-failures
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/python3
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-factory-reset
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/landscape-client
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-sysctl
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/sbin/logrotate
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/libexec/pk-offline-update
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrlock
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-networkd-wait-online
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/share/apport/whoopsie-upload-all
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-quotacheck
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/rsync
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /bin/mount
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /bin/mkdir
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /bin/cp
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrlock
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/cloud-init
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-fsck
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /sbin/e2scrub_all
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/snapd/snapd
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /bin/bash
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pstore
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-logind
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-quotacheck
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/python3
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/networkd-dispatcher
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-storagetm
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/sbin/rsyslogd
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-hibernate-resume
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-tpm2-setup
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /etc/update-motd.d/50-motd-news
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/snap
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-random-seed
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-modules-load
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-networkd-wait-online
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-growfs
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-hibernate-resume
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/share/apport/apport
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /bin/journalctl
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/snapd/snap-repair
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-sleep
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-rfkill
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-bsod
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /sbin/e2scrub
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-growfs
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/snapd/snap-bootstrap
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-tpm2-clear
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-timedated
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-sleep
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrlock
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/python3
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/share/unattended-upgrades/unattended-upgrade-shutdown
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-journald
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-udevd
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /lib/console-setup/keyboard-setup.sh
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/snapd/snapd.core-fixup.sh
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/snap
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrlock
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrlock
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-binfmt
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /lib/console-setup/console-setup.sh
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-battery-check
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-modules-load
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/share/apport/apport
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-factory-reset
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /sbin/fstrim
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/libexec/netplan/configure
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-user-runtime-dir
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-user-sessions
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/libexec/dpkg/dpkg-db-backup
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-sleep
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/kmod
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-network-generator
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/libexec/chrony/chrony-helper
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /lib/apparmor/apparmor.systemd
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/snapd/snap-failure
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/python3
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-validatefs
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-update-done
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-sysctl
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/apt/apt.systemd.daily
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/python3
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-sysroot-fstab-check
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-journald
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-remount-fs
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-timedated
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/polkit-1/polkit-agent-helper-1
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-volatile-root
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/bash
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrlock
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/sbin/cron
+           Writable ExecStart binary in root-level service
+
+  Mitigation: Ensure service ExecStart binaries are owned by root and not world-writable.
+
+────────────────────────────────────────────────────────────
+  [CRON JOB VULNERABILITIES]
+────────────────────────────────────────────────────────────
+  [HIGH  ] /
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /run/systemd/system
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /run/systemd/system
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /dev/null
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /proc/self/status
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /var/cache/man
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /bin/sh
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /proc/self/status
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /var/cache/man
+           Writable script executed by cron - replace for privilege escalation
+
+  Mitigation: Restrict cron scripts to root ownership (chmod 700, chown root).
+
+────────────────────────────────────────────────────────────
+  [SUDO MISCONFIGURATIONS]
+────────────────────────────────────────────────────────────
+  [MEDIUM] (ALL : ALL) ALL
+           Broad privilege rule
+
+  Mitigation: Remove NOPASSWD rules. Use specific commands, never ALL.
+
+======================================================================
+  END OF REPORT
+======================================================================
+

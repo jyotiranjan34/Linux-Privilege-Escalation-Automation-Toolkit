@@ -1,0 +1,445 @@
+======================================================================
+  LINUX PRIVILEGE ESCALATION AUDIT REPORT
+  Generated : 2026-05-30 11:40:35
+  Host      : LAPTOP-B389URC8
+  User      : root
+  OS        : Ubuntu 26.04 LTS
+  Kernel    : 6.6.114.1-microsoft-standard-WSL2
+======================================================================
+
+  SUMMARY: 133 HIGH | 70 MEDIUM | 0 LOW findings
+
+
+────────────────────────────────────────────────────────────
+  [WEAK PERMISSIONS]
+────────────────────────────────────────────────────────────
+  [MEDIUM] /etc/ethertypes
+           
+  [MEDIUM] /etc/vim/vimrc.tiny
+           
+  [MEDIUM] /etc/vim/vimrc
+           
+  [MEDIUM] /etc/magic
+           
+  [MEDIUM] /etc/profile.d/01-locale-fix.sh
+           
+  [MEDIUM] /etc/profile.d/bash_completion.sh
+           
+  [MEDIUM] /etc/profile.d/gawk.sh
+           
+  [MEDIUM] /etc/profile.d/Z99-cloudinit-warnings.sh
+           
+  [MEDIUM] /etc/profile.d/gawk.csh
+           
+  [MEDIUM] /etc/profile.d/apps-bin-path.sh
+           
+  [MEDIUM] /etc/profile.d/Z97-byobu.sh
+           
+  [MEDIUM] /etc/profile.d/update-motd.sh
+           
+  [MEDIUM] /etc/profile.d/Z99-cloud-locale-test.sh
+           
+  [MEDIUM] /etc/crontab
+           
+  [MEDIUM] /etc/subgid
+           
+  [MEDIUM] /etc/protocols
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-3.inc
+           
+  [MEDIUM] /etc/console-setup/compose.GEORGIAN-ACADEMY.inc
+           
+  [MEDIUM] /etc/console-setup/cached_ISO-8859-1.acm.gz
+           
+  [MEDIUM] /etc/console-setup/remap.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-16.inc
+           
+  [MEDIUM] /etc/console-setup/vtrgb.vga
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-5.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-10.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-8.inc
+           
+  [MEDIUM] /etc/console-setup/cached_setup_terminal.sh
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-2.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-11.inc
+           
+  [MEDIUM] /etc/console-setup/compose.CP1251.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ISIRI-3342.inc
+           
+  [MEDIUM] /etc/console-setup/compose.GEORGIAN-PS.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-1.inc
+           
+  [MEDIUM] /etc/console-setup/compose.IBM1133.inc
+           
+  [MEDIUM] /etc/console-setup/compose.CP1256.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-14.inc
+           
+  [MEDIUM] /etc/console-setup/ISO-8859-1.acm
+           
+  [MEDIUM] /etc/console-setup/Uni2-Fixed16.psf.gz
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-7.inc
+           
+  [MEDIUM] /etc/console-setup/compose.KOI8-R.inc
+           
+  [MEDIUM] /etc/console-setup/cached_UTF-8_del.kmap.gz
+           
+  [MEDIUM] /etc/console-setup/compose.CP1255.inc
+           
+  [MEDIUM] /etc/console-setup/cached_Uni2-Fixed16.psf.gz
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-6.inc
+           
+  [MEDIUM] /etc/console-setup/compose.KOI8-U.inc
+           
+  [MEDIUM] /etc/console-setup/cached_ISO-8859-1_del.kmap.gz
+           
+  [MEDIUM] /etc/console-setup/compose.VISCII.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ARMSCII-8.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-15.inc
+           
+  [MEDIUM] /etc/console-setup/compose.ISO-8859-9.inc
+           
+  [MEDIUM] /etc/console-setup/compose.TIS-620.inc
+           
+  [MEDIUM] /
+           
+  [MEDIUM] /etc
+           
+  [MEDIUM] /etc/vim
+           
+  [MEDIUM] /etc/profile.d
+           
+  [MEDIUM] /etc/console-setup
+           
+  [MEDIUM] /etc/netplan
+           
+  [MEDIUM] /etc/rc6.d
+           
+  [MEDIUM] /etc/rc1.d
+           
+  [MEDIUM] /etc/dpkg
+           
+  [MEDIUM] /etc/dpkg/dpkg.cfg.d
+           
+  [MEDIUM] /etc/dpkg/origins
+           
+  [MEDIUM] /etc/ssh
+           
+  [MEDIUM] /etc/ssh/ssh_config.d
+           
+  [MEDIUM] /etc/networkd-dispatcher
+           
+  [MEDIUM] /etc/networkd-dispatcher/no-carrier.d
+           
+  [MEDIUM] /etc/networkd-dispatcher/dormant.d
+           
+  [MEDIUM] /etc/networkd-dispatcher/routable.d
+           
+  [MEDIUM] /etc/networkd-dispatcher/carrier.d
+           
+  [MEDIUM] /etc/networkd-dispatcher/off.d
+           
+
+  Mitigation: Fix with chmod. /etc/shadow should be 640, /etc/passwd 644.
+
+────────────────────────────────────────────────────────────
+  [MISCONFIGURED SERVICES]
+────────────────────────────────────────────────────────────
+  [HIGH  ] /usr/sbin/rsyslogd
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-hostnamed
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-sleep
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /sbin/e2scrub_all
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-localed
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-localed
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-fsck
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /sbin/setvtrgb
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrlock
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/sbin/pam_namespace_helper
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-logind
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/libexec/packagekitd
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-hostnamed
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/libexec/wsl-pro-service
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/apt/apt.systemd.daily
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/share/apport/apport
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-tpm2-setup
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrlock
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/snapd/snapd-apparmor
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-backlight
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-boot-check-no-failures
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/python3
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-factory-reset
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/landscape-client
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-sysctl
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/sbin/logrotate
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/libexec/pk-offline-update
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrlock
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-networkd-wait-online
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/share/apport/whoopsie-upload-all
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-quotacheck
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/rsync
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /bin/mount
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /bin/mkdir
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /bin/cp
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrlock
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/cloud-init
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-fsck
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /sbin/e2scrub_all
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/snapd/snapd
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /bin/bash
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pstore
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-logind
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-quotacheck
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/python3
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/networkd-dispatcher
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-storagetm
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/sbin/rsyslogd
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-hibernate-resume
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-tpm2-setup
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /etc/update-motd.d/50-motd-news
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/snap
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-random-seed
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-modules-load
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-networkd-wait-online
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-growfs
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-hibernate-resume
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/share/apport/apport
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /bin/journalctl
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/snapd/snap-repair
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-sleep
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-rfkill
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-bsod
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /sbin/e2scrub
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-growfs
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/snapd/snap-bootstrap
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-tpm2-clear
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-timedated
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-sleep
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrlock
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/python3
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/share/unattended-upgrades/unattended-upgrade-shutdown
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-journald
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-udevd
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /lib/console-setup/keyboard-setup.sh
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/snapd/snapd.core-fixup.sh
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/snap
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrlock
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrlock
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-binfmt
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /lib/console-setup/console-setup.sh
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-battery-check
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-modules-load
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/share/apport/apport
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-factory-reset
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /sbin/fstrim
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/libexec/netplan/configure
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-user-runtime-dir
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-user-sessions
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/libexec/dpkg/dpkg-db-backup
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-sleep
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/kmod
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-network-generator
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/libexec/chrony/chrony-helper
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /lib/apparmor/apparmor.systemd
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/snapd/snap-failure
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/python3
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-validatefs
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-update-done
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-sysctl
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/apt/apt.systemd.daily
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/python3
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-sysroot-fstab-check
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-journald
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-remount-fs
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-timedated
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/polkit-1/polkit-agent-helper-1
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrextend
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-volatile-root
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/bin/bash
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/lib/systemd/systemd-pcrlock
+           Writable ExecStart binary in root-level service
+  [HIGH  ] /usr/sbin/cron
+           Writable ExecStart binary in root-level service
+
+  Mitigation: Ensure service ExecStart binaries are owned by root and not world-writable.
+
+────────────────────────────────────────────────────────────
+  [CRON JOB VULNERABILITIES]
+────────────────────────────────────────────────────────────
+  [HIGH  ] /
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /run/systemd/system
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /run/systemd/system
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /dev/null
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /proc/self/status
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /var/cache/man
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /bin/sh
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /proc/self/status
+           Writable script executed by cron - replace for privilege escalation
+  [HIGH  ] /var/cache/man
+           Writable script executed by cron - replace for privilege escalation
+
+  Mitigation: Restrict cron scripts to root ownership (chmod 700, chown root).
+
+────────────────────────────────────────────────────────────
+  [SUDO MISCONFIGURATIONS]
+────────────────────────────────────────────────────────────
+  [MEDIUM] (ALL : ALL) ALL
+           Broad privilege rule
+
+  Mitigation: Remove NOPASSWD rules. Use specific commands, never ALL.
+
+======================================================================
+  END OF REPORT
+======================================================================
